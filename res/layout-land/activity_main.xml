@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+	
+      <LinearLayout 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical" >
+    	
+    	<Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="@string/butt" />
+
+    	<fragment
+    	    android:id="@+id/fr1"
+    	    android:name="com.ghostwg.homework1.sfrag"
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    class="com.ghostwg.homework1.sfrag" />
+
+     </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal" >
+       		<FrameLayout 
+        		android:id="@+id/fL1"
+        		android:layout_width="match_parent"
+ 				android:layout_height="match_parent">
+ 			</FrameLayout> 
+    </LinearLayout>
+            
+    
+
+    </LinearLayout>

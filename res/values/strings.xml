@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">homeWork1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="sfrag">Static Fragment</string>
+    <string name="dfrag">Dynamic Fragment</string>
+    <string name="butt">Add Fragment</string>
+    
+
+</resources>

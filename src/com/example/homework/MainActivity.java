@@ -50,14 +50,20 @@ public class MainActivity extends ActionBarActivity {
             R.string.drawer_open,  /* "open drawer" description for accessibility */
             R.string.drawer_close  /* "close drawer" description for accessibility */
             ) {
-        public void onDrawerClosed(View view) {}
-        public void onDrawerOpened(View drawerView) {}
+        public void onDrawerClosed(View view) {
+        	
+        }
+        public void onDrawerOpened(View drawerView) {
+        	
+        }
     };
+    
     mDrawerLayout.setDrawerListener(mDrawerToggle);
 
     if (savedInstanceState == null) {
     	getSupportFragmentManager().beginTransaction();
-    	getSupportFragmentManager().beginTransaction().replace(R.id.content_frame,startframe).commit();
+    	getSupportFragmentManager().beginTransaction().
+    	    replace(R.id.content_frame,startframe).commit();
     	
     }
 }
@@ -84,12 +90,14 @@ public class MainActivity extends ActionBarActivity {
 	
 	public void openHomeTask1(){
 		getSupportFragmentManager().beginTransaction();
-		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, homework1).commit();
+		getSupportFragmentManager().beginTransaction().
+		   replace(R.id.content_frame, homework1).commit();
 	}
 	
 	public void openHomeTask2(){
 		getSupportFragmentManager().beginTransaction();
-		getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, animation).commit();
+		getSupportFragmentManager().beginTransaction().
+		   replace(R.id.content_frame, animation).commit();
 	}
 	
 	@Override
@@ -98,7 +106,5 @@ public class MainActivity extends ActionBarActivity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
-	
-	 
 	
 }

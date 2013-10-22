@@ -13,7 +13,7 @@
     
     <fragment 
         android:name="com.ghostwg.homework.sfrag"
-        class="com.example.homework.sfrag"
+        class="com.example.homework.StaticFragment"
         android:id="@+id/fr1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

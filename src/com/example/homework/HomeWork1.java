@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class HomeWork1 extends Fragment{
 	
 	FragmentTransaction fTrans;
-	dfrag dynfrag = new dfrag();
+	DynamicFragment dynfrag = new DynamicFragment();
 	int i=0;
 	
 	@Override

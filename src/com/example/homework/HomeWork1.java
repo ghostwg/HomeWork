@@ -34,7 +34,8 @@ public class HomeWork1 extends Fragment{
 			i++;
 		}
 		fTrans.addToBackStack(null);
-		fTrans.commit();		      }
+		fTrans.commit();
+        }
 	    });
 	   return v;
 	}

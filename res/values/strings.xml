@@ -8,6 +8,7 @@
     <string-array name="HomeWork">
         <item >HomeWork1</item>
         <item >HomeWork2</item>
+        <item >HomeWork3</item>
     </string-array>
     <string name="info">Info</string>
     <string name="upload">Upload</string>
@@ -19,5 +20,14 @@
 	<string name="sfrag">Static Fragment</string>
     <string name="dfrag">Dynamic Fragment</string>
     <string name="butt">Add Fragment</string>
+    <string-array name="testitems">
+        <item>test1</item>
+        <item>test2</item>
+        <item>test3</item>
+        <item>test4</item>
+        <item>test5</item>
+    </string-array>
+
+
 
 </resources>

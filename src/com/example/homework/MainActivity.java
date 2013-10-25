@@ -22,6 +22,7 @@ public class MainActivity extends ActionBarActivity {
     private String[] mHomeWorks;
     
     HomeWork1 homework1 = new HomeWork1();
+    HomeWork3 multipanelayout = new HomeWork3();
     Startframe startframe = new Startframe();
     AnimationFrame animation = new AnimationFrame();
 
@@ -51,17 +52,16 @@ public class MainActivity extends ActionBarActivity {
             R.string.drawer_close  /* "close drawer" description for accessibility */
             ) {
         public void onDrawerClosed(View view) {
-        	
+            getSupportActionBar().setTitle(R.string.app_name);
         }
         public void onDrawerOpened(View drawerView) {
-        	
+            getSupportActionBar().setTitle(R.string.drawer_open);
         }
     };
     
     mDrawerLayout.setDrawerListener(mDrawerToggle);
 
     if (savedInstanceState == null) {
-    	getSupportFragmentManager().beginTransaction();
     	getSupportFragmentManager().beginTransaction().
     	    replace(R.id.content_frame,startframe).commit();
     	
@@ -85,20 +85,26 @@ public class MainActivity extends ActionBarActivity {
 			case 1:
 				openHomeTask2();
 				break;
+            case 2:
+                openHomeTask3();
+                break;
 		}
 	}
 	
 	public void openHomeTask1(){
-		getSupportFragmentManager().beginTransaction();
 		getSupportFragmentManager().beginTransaction().
 		   replace(R.id.content_frame, homework1).commit();
 	}
 	
 	public void openHomeTask2(){
-		getSupportFragmentManager().beginTransaction();
 		getSupportFragmentManager().beginTransaction().
 		   replace(R.id.content_frame, animation).commit();
 	}
+
+    public void openHomeTask3(){
+        getSupportFragmentManager().beginTransaction().
+                replace(R.id.content_frame, multipanelayout).commit();
+    }
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
